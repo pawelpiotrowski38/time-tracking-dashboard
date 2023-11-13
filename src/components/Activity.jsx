@@ -19,7 +19,7 @@ export default function Activity({ activity, timeframe }) {
                         <img className='activity__button-icon' src='./images/icon-ellipsis.svg' alt='ellipsis' />
                     </button>
                 </div>
-                <div activity className='activity__data'>
+                <div className='activity__data'>
                     <p className='activity__current-time'>
                         {`${activity.timeframes[timeframe].current}hrs`}
                     </p>
