@@ -5,6 +5,7 @@ import './app.css';
 
 export default function App() {
     const [activities, setActivities] = useState([]);
+    const [timeframe, setTimeframe] = useState('weekly');
 
     useEffect(() => {
         const fetchData = async function() {
@@ -17,8 +18,8 @@ export default function App() {
 
     return (
         <main className='main'>
-            <User />
-            <Activities activities={activities} />
+            <User onSetTimeframe={setTimeframe} />
+            <Activities activities={activities} timeframe={timeframe} />
         </main>
     )
 }

@@ -1,7 +1,7 @@
 import Activity from './Activity';
 import './activities.css';
 
-export default function Activities({ activities }) {
+export default function Activities({ activities, timeframe }) {
     return (
         <section className='activities'>
             <ul className='activities__list'>
@@ -9,6 +9,7 @@ export default function Activities({ activities }) {
                     <Activity
                         key={activity.title}
                         activity={activity}
+                        timeframe={timeframe}
                     />
                 ))}
             </ul>

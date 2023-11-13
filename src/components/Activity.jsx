@@ -1,6 +1,6 @@
 import './activity.css';
 
-export default function Activity({ activity }) {
+export default function Activity({ activity, timeframe }) {
     const formattedTitle = activity.title.toLowerCase().replace(/\s+/g, "-");
 
     const styles = {
@@ -21,10 +21,10 @@ export default function Activity({ activity }) {
                 </div>
                 <div activity className='activity__data'>
                     <p className='activity__current-time'>
-                        {`${activity.timeframes.weekly.current}hrs`}
+                        {`${activity.timeframes[timeframe].current}hrs`}
                     </p>
                     <p className='activity__last-time'>
-                        {`Last Week - ${activity.timeframes.weekly.previous}hrs`}
+                        {`Last Week - ${activity.timeframes[timeframe].previous}hrs`}
                     </p>
                 </div>
             </div>

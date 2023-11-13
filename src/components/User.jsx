@@ -1,6 +1,6 @@
 import './user.css';
 
-export default function User() {
+export default function User({ onSetTimeframe }) {
     return (
         <section className='user'>
             <div className='user__info'>
@@ -18,17 +18,17 @@ export default function User() {
             </div>
             <ul className='user__nav'>
                 <li className='user__nav-item'>
-                    <button className='user__nav-button'>
+                    <button className='user__nav-button' onClick={() => onSetTimeframe('daily')}>
                         Daily
                     </button>
                 </li>
                 <li className='user__nav-item'>
-                    <button className='user__nav-button'>
+                    <button className='user__nav-button' onClick={() => onSetTimeframe('weekly')}>
                         Weekly
                     </button>
                 </li>
                 <li className='user__nav-item'>
-                    <button className='user__nav-button'>
+                    <button className='user__nav-button' onClick={() => onSetTimeframe('monthly')}>
                         Monthly
                     </button>
                 </li>
