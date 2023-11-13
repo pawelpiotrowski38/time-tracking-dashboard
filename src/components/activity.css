@@ -2,11 +2,9 @@
     position: relative;
     width: 20.4375rem;
     border-radius: 1rem;
-    background-image: url('./images/icon-work.svg');
     background-repeat: no-repeat;
     background-position-x: 14.4375rem;
     background-position-y: -0.6875rem;
-    background-color: var(--light-red-work);
 }
 
 .activity__info {

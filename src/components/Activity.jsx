@@ -1,12 +1,19 @@
 import './activity.css';
 
-export default function Activity() {
+export default function Activity({ activity }) {
+    const formattedTitle = activity.title.toLowerCase().replace(/\s+/g, "-");
+
+    const styles = {
+        backgroundImage: `url('./images/icon-${formattedTitle}.svg')`,
+        backgroundColor: `var(--${formattedTitle})`,
+    }
+
     return (
-        <li className='activity'>
+        <li className='activity' style={styles}>
             <div className='activity__info'>
                 <div className='activity__header'>
                     <h2 className='activity__title'>
-                        Work
+                        {activity.title}
                     </h2>
                     <button className='activity__button'>
                         <img className='activity__button-icon' src='./images/icon-ellipsis.svg' alt='ellipsis' />
@@ -14,10 +21,10 @@ export default function Activity() {
                 </div>
                 <div activity className='activity__data'>
                     <p className='activity__current-time'>
-                        32hrs
+                        {`${activity.timeframes.weekly.current}hrs`}
                     </p>
                     <p className='activity__last-time'>
-                        Last Week - 36hrs
+                        {`Last Week - ${activity.timeframes.weekly.previous}hrs`}
                     </p>
                 </div>
             </div>
