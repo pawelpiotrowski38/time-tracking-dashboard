@@ -1,0 +1,47 @@
+.activity {
+    position: relative;
+    width: 20.4375rem;
+    border-radius: 1rem;
+    background-image: url('./images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position-x: 14.4375rem;
+    background-position-y: -0.6875rem;
+    background-color: var(--light-red-work);
+}
+
+.activity__info {
+    position: relative;
+    top: 2.375rem;
+    padding: 1.6875rem 1.4375rem 1.6875rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--dark-blue);
+}
+
+.activity__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.1875rem;
+}
+
+.activity__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity__title {
+    font-size: 1.125rem;
+}
+
+.activity__current-time {
+    margin-right: 4.4375rem;
+    color: var(--very-pale-blue);
+    font-size: 2rem;
+}
+
+.activity__last-time {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: 0.05px;
+}
