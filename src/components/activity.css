@@ -33,7 +33,7 @@
 }
 
 .activity__current-time {
-    margin-right: 4.4375rem;
+    /* margin-right: 4.4375rem; */
     color: var(--very-pale-blue);
     font-size: 2rem;
 }
