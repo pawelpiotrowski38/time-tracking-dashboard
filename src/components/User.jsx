@@ -2,7 +2,7 @@ import './user.css';
 
 export default function User({ onSetTimeframe }) {
     return (
-        <section className='user'>
+        <div className='user'>
             <div className='user__info'>
                 <div className='user__image-container'>
                     <img className='user__image' src='./images/image-jeremy.png' alt='user avatar' />
@@ -33,6 +33,6 @@ export default function User({ onSetTimeframe }) {
                     </button>
                 </li>
             </ul>
-        </section>
+        </div>
     )
 }
