@@ -1,4 +1,6 @@
 .user {
+    width: 20.4375rem;
+    margin-bottom: 1.5rem;
     border-radius: 1rem;
     background-color: var(--dark-blue);
 }
@@ -8,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 2rem 2.5625rem 1.9375rem 1.8125rem;
+    padding: 2rem 2.5rem 1.9375rem 1.8125rem;
     border-radius: 1rem;
     background-color: var(--blue);
 }
@@ -56,4 +58,8 @@
     color: var(--desaturated-blue);
     font-size: 1.125rem;
     font-weight: 400;
+}
+
+.user__nav-button--selected {
+    color: var(--very-pale-blue);
 }

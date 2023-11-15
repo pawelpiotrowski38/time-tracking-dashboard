@@ -18,7 +18,7 @@ export default function Dashboard() {
 
     return (
         <section className='dashboard'>
-            <User onSetTimeframe={setTimeframe} />
+            <User timeframe={timeframe} onSetTimeframe={setTimeframe} />
             <Activities activities={activities} timeframe={timeframe} />
         </section>
     )
