@@ -1,8 +1,7 @@
 .activities {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 3.875rem;
-    column-gap: 1.5rem;
+    gap: 1.5rem;
     width: 100%;
     min-width: 17.5rem;
     max-width: 40rem;

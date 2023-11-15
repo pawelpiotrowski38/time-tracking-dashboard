@@ -10,6 +10,7 @@ export default function Activity({ activity, timeframe }) {
 
     return (
         <li className='activity' style={styles}>
+            <div className='activity__bar'></div>
             <div className='activity__info'>
                 <div className='activity__header'>
                     <h2 className='activity__title'>

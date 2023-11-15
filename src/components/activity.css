@@ -1,15 +1,19 @@
 .activity {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 1.5rem 1.5rem;
     background-repeat: no-repeat;
-    background-position-x: 14.4375rem;
+    background-position-x: 93%;
     background-position-y: -0.6875rem;
 }
 
+.activity__bar {
+    height: 2.375rem;
+}
+
 .activity__info {
-    position: relative;
-    top: 2.375rem;
+    width: 100%;
     padding: 1.6875rem 1.4375rem 1.6875rem 1.5rem;
     border-radius: 1rem;
     background-color: var(--dark-blue);
@@ -29,6 +33,7 @@
 }
 
 .activity__title {
+    color: var(--very-pale-blue);
     font-size: 1.125rem;
 }
 
