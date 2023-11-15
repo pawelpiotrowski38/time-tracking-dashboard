@@ -3,4 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 68.5em) {
+    .dashboard {
+        flex-direction: row;
+    }
 }

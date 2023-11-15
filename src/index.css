@@ -32,6 +32,7 @@ html {
 }
 
 body {
+    min-height: 1469px;
     background-color: var(--very-dark-blue);
     color: var(--pale-blue);
     -webkit-font-smoothing: antialiased;
@@ -46,6 +47,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,4 +76,16 @@ ol, ul {
 
 a {
     text-decoration: none;
+}
+
+@media screen and (min-width: 41.75em) {
+    body {
+        min-height: 950px;
+    }
+}
+
+@media screen and (min-width: 68.5em) {
+    body {
+        min-height: 1024px;
+    }
 }

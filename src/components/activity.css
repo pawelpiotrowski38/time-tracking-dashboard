@@ -1,6 +1,6 @@
 .activity {
     position: relative;
-    width: 20.4375rem;
+    width: 100%;
     border-radius: 1rem;
     background-repeat: no-repeat;
     background-position-x: 14.4375rem;
@@ -33,7 +33,7 @@
 }
 
 .activity__current-time {
-    /* margin-right: 4.4375rem; */
+    margin-right: 0.25rem;
     color: var(--very-pale-blue);
     font-size: 2rem;
 }
