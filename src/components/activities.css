@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (min-width: 68.5em) {
+@media screen and (min-width: 73.75em) {
     .activities {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.875rem;

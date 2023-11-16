@@ -68,7 +68,7 @@
     color: var(--very-pale-blue);
 }
 
-@media screen and (min-width: 68.5em) {
+@media screen and (min-width: 73.75em) {
     .user {
         min-width: 0;
         width: 15.9375rem;
