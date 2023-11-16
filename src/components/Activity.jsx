@@ -6,6 +6,8 @@ export default function Activity({ activity, timeframe }) {
     const styles = {
         backgroundImage: `url('./images/icon-${formattedTitle}.svg')`,
         backgroundColor: `var(--${formattedTitle})`,
+        backgroundPositionX: `${activity.iconPosX}%`,
+        backgroundPositionY: `${activity.iconPosY}%`
     }
 
     return (

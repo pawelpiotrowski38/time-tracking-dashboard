@@ -4,8 +4,6 @@
     width: 100%;
     border-radius: 1rem 1rem 1.5rem 1.5rem;
     background-repeat: no-repeat;
-    background-position-x: 93%;
-    background-position-y: -0.6875rem;
 }
 
 .activity__bar {
@@ -52,7 +50,6 @@
 @media screen and (min-width: 73.75em) {
     .activity {
         min-width: 15.9375rem;
-        background-position-x: 90%;
         border-radius: 0.9375rem 0.9375rem 1.5rem 1.5rem;
     }
 
