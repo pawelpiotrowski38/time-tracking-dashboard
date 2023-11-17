@@ -1,0 +1,25 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.loading__spinner {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.375rem solid var(--desaturated-blue);
+    border-radius: 50%;
+    border-top-color: var(--very-dark-blue);
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
