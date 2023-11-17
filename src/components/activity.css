@@ -15,6 +15,12 @@
     padding: 1.6875rem 1.4375rem 1.6875rem 1.5rem;
     border-radius: 1rem;
     background-color: var(--dark-blue);
+    transition: all 0.25s ease-in-out;
+}
+
+.activity__info:hover {
+    background-color: var(--activity-hover-blue);
+    cursor: pointer;
 }
 
 .activity__header {
@@ -33,6 +39,23 @@
 .activity__title {
     color: var(--very-pale-blue);
     font-size: 1.125rem;
+}
+
+.activity__button {
+    padding: 0.125rem 0;
+}
+
+.activity__button:hover {
+    cursor: pointer;
+}
+
+.activity__button svg path {
+    transition: all 0.25s ease-in-out;
+}
+
+.activity__button:hover svg path {
+    fill: var(--very-pale-blue);
+    cursor: pointer;
 }
 
 .activity__current-time {
