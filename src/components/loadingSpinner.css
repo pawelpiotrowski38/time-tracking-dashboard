@@ -1,11 +1,11 @@
-.loading {
+.loading-spinner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.loading__spinner {
+.loading-spinner__spin {
     display: inline-block;
     width: 3.5rem;
     height: 3.5rem;

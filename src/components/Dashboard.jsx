@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import User from './User';
 import Activities from './Activities';
-import Loading from './Loading';
+import LoadingSpinner from './LoadingSpinner';
 import ErrorMessage from './ErrorMessage';
 import './dashboard.css';
 
@@ -30,7 +30,7 @@ export default function Dashboard() {
     return (
         <section className='dashboard'>
             {isLoading ? (
-                <Loading />
+                <LoadingSpinner />
             ) : (
                 (error ? (
                     <ErrorMessage error={error} />
