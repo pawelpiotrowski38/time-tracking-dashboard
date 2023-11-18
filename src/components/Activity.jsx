@@ -1,7 +1,33 @@
+import { useEffect, useState } from 'react';
 import './activity.css';
 
 export default function Activity({ activity, timeframe }) {
+    const [currentValue, setCurrentValue] = useState(0);
+    const animationTime = 500;
     const formattedTitle = activity.title.toLowerCase().replace(/\s+/g, "-");
+
+    useEffect(() => {
+        let startTimestamp;
+        
+        if (activity) {
+            const animate = (timestamp) => {
+                if (!startTimestamp) {
+                    startTimestamp = timestamp
+                }
+                const elapsedTime = timestamp - startTimestamp;
+            
+                if (elapsedTime < animationTime) {
+                    const progress = elapsedTime / animationTime;
+                    setCurrentValue((activity.timeframes[timeframe].current * progress).toFixed(0));
+                    requestAnimationFrame(animate);
+                } else {
+                    setCurrentValue(activity.timeframes[timeframe].current);
+                }
+            };
+        
+            requestAnimationFrame(animate);
+        }
+    }, [activity, timeframe]);
 
     const styles = {
         backgroundImage: `url('./images/icon-${formattedTitle}.svg')`,
@@ -26,7 +52,7 @@ export default function Activity({ activity, timeframe }) {
                 </div>
                 <div className='activity__data'>
                     <p className='activity__current-time'>
-                        {`${activity.timeframes[timeframe].current}hrs`}
+                        {`${currentValue}hrs`}
                     </p>
                     <p className='activity__last-time'>
                         {`Last Week - ${activity.timeframes[timeframe].previous}hrs`}
