@@ -1,0 +1,14 @@
+.error {
+    width: 100%;
+    text-align: center;
+}
+
+.error__heading {
+    margin-bottom: 1.5rem;
+    color: var(--very-pale-blue);
+    font-size: 2.25rem;
+}
+
+.error__message {
+    font-size: 1.25rem;
+}
