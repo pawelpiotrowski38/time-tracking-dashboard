@@ -1,0 +1,22 @@
+.button {
+    min-width: 5rem;
+    color: var(--desaturated-blue);
+    font-size: 1.125rem;
+    font-weight: 400;
+    transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+    color: var(--very-pale-blue);
+    cursor: pointer;
+}
+
+.button--selected {
+    color: var(--very-pale-blue);
+}
+
+@media screen and (min-width: 73.75em) { 
+    .button {
+        text-align: left;
+    }
+}

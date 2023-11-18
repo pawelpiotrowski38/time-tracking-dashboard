@@ -57,23 +57,6 @@
     padding: 1.4375rem 0.9375rem 1.5rem 0.9375rem;
 }
 
-.user__nav-button {
-    min-width: 5rem;
-    color: var(--desaturated-blue);
-    font-size: 1.125rem;
-    font-weight: 400;
-    transition: all 0.25s ease-in-out;
-}
-
-.user__nav-button:hover {
-    color: var(--very-pale-blue);
-    cursor: pointer;
-}
-
-.user__nav-button--selected {
-    color: var(--very-pale-blue);
-}
-
 @media screen and (min-width: 28em) {
     .user__nav {
         justify-content: space-around;
@@ -132,9 +115,5 @@
 
     .user__nav >:not(:last-child) {
         margin-bottom: 1.125rem;
-    }
-    
-    .user__nav-button {
-        text-align: left;
     }
 }

@@ -1,3 +1,4 @@
+import Button from './Button';
 import './user.css';
 
 export default function User({ timeframe, onSetTimeframe }) {
@@ -18,28 +19,31 @@ export default function User({ timeframe, onSetTimeframe }) {
             </div>
             <ul className='user__nav'>
                 <li className='user__nav-item'>
-                    <button
-                        className={`user__nav-button ${timeframe === 'daily' ? 'user__nav-button--selected' : ''}`}
-                        onClick={() => onSetTimeframe('daily')}
+                    <Button
+                        type={'daily'}
+                        timeframe={timeframe}
+                        onSetTimeframe={onSetTimeframe}
                     >
                         Daily
-                    </button>
+                    </Button>
                 </li>
                 <li className='user__nav-item'>
-                    <button
-                        className={`user__nav-button ${timeframe === 'weekly' ? 'user__nav-button--selected' : ''}`}
-                        onClick={() => onSetTimeframe('weekly')}
+                    <Button
+                        type={'weekly'}
+                        timeframe={timeframe}
+                        onSetTimeframe={onSetTimeframe}
                     >
                         Weekly
-                    </button>
+                    </Button>
                 </li>
                 <li className='user__nav-item'>
-                    <button
-                        className={`user__nav-button ${timeframe === 'monthly' ? 'user__nav-button--selected' : ''}`}
-                        onClick={() => onSetTimeframe('monthly')}
+                    <Button
+                        type={'monthly'}
+                        timeframe={timeframe}
+                        onSetTimeframe={onSetTimeframe}
                     >
                         Monthly
-                    </button>
+                    </Button>
                 </li>
             </ul>
         </div>
